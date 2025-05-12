@@ -1,0 +1,49 @@
+" 기본적인 사용자 설정
+set number               " 라인 번호 표시
+set relativenumber       " 상대 라인 번호 표시
+set cursorline           " 커서가 있는 라인 강조
+set showmatch            " 괄호가 맞는지 강조
+set hlsearch             " 검색 결과 하이라이트
+set incsearch            " 검색 시 실시간 하이라이트
+set ignorecase           " 검색 시 대소문자 구분하지 않음
+set smartcase            " 대소문자 구분 검색을 원하면, 대문자 포함시 구분
+set showcmd              " 입력 명령어를 화면에 표시
+set ruler                " 커서 위치를 화면에 표시
+
+" 탭 및 들여쓰기 설정
+set tabstop=4            " 탭 크기 4칸
+set shiftwidth=4         " 자동 들여쓰기 크기 4칸
+set softtabstop=4        " 들여쓰기를 공백으로 변환
+set expandtab            " 탭을 공백으로 변환
+set smartindent          " 스마트 들여쓰기 활성화
+set autoindent           " 자동 들여쓰기
+set copyindent           " 들여쓰기 복사
+set smarttab             " 탭에서 자동으로 공백으로 변환
+
+" 줄 바꿈 설정
+set wrap                 " 자동 줄 바꿈
+set linebreak            " 단어 중간에서 줄 바꿈하지 않음
+
+" 색상 설정 (기본 색상 사용)
+syntax enable            " 구문 강조
+set background=dark      " 어두운 배경 설정 (어두운 테마 사용 시)
+set termguicolors        " 24비트 컬러 지원
+
+" 백스페이스 설정
+set backspace=indent,eol,start  " 백스페이스 시 더 유연하게 동작
+
+" 검색 설정
+set incsearch            " 실시간 검색
+set ignorecase           " 대소문자 구분 없이 검색
+set smartcase            " 대소문자 포함 검색 시 구분
+
+" 자동 저장 설정 (파일 변경 시 자동 저장)
+autocmd BufLeave * silent! write
+
+" 편집 중 자동으로 백업 및 스왑 파일 생성 방지
+set nobackup
+set noswapfile
+
+" 무선 커서 이동
+set mouse=a              " 마우스를 사용할 수 있도록 활성화 (편리한 커서 이동)
+
